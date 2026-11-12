@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#eef1f8" />
+  <title>Welcome — Luma</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <main class="shell">
+    <section class="visual-panel">
+      <div class="brand"><div class="brand-mark"><span></span><span></span><span></span></div><span>LUMA</span></div>
+      <div class="visual-copy">
+        <div class="eyebrow"><i></i> YOUR SPACE, YOUR WAY</div>
+        <h1>A calmer way<br>to <em>get started.</em></h1>
+        <p>A beautiful little space for everything that comes next.</p>
+      </div>
+      <div class="orb-wrap"><div class="orb"><div class="orb-core"></div><div class="orb-glint"></div></div><div class="orbit orbit-a"></div><div class="orbit orbit-b"></div></div>
+      <div class="visual-footer"><span>DESIGNED FOR YOUR EVERY DAY</span><span>01 — 03</span></div>
+    </section>
+    <section class="form-panel">
+      <div class="mobile-brand"><div class="brand-mark"><span></span><span></span><span></span></div><span>LUMA</span></div>
+      <div class="form-wrap">
+        <div class="welcome-tag">✦ &nbsp;WELCOME</div>
+        <h2 id="formTitle">Welcome back</h2>
+        <p class="subtitle" id="formSubtitle">Sign in to continue to your space.</p>
+        <div class="switcher" role="tablist"><button class="switch active" id="loginTab" type="button">Sign in</button><button class="switch" id="signupTab" type="button">Create account</button></div>
+        <form id="authForm" novalidate>
+          <label id="nameLabel" class="field hidden"> <span>Full name</span><div class="input-wrap"><span class="field-icon">✧</span><input id="fullName" type="text" autocomplete="name" placeholder="Your name"></div></label>
+          <label class="field"><span>Email address</span><div class="input-wrap"><span class="field-icon">✉</span><input id="email" type="email" autocomplete="email" placeholder="you@example.com" required></div></label>
+          <label class="field"><span>Password</span><div class="input-wrap"><span class="field-icon">⌑</span><input id="password" type="password" autocomplete="current-password" placeholder="At least 8 characters" required><button class="eye" type="button" id="togglePassword" aria-label="Show password">◎</button></div></label>
+          <div class="form-meta"><label class="remember"><input type="checkbox" id="remember"><span class="checkmark"></span><span>Remember me</span></label><span class="secure-note">⌑ &nbsp;Secure sign in</span></div>
+          <button class="submit" id="submitBtn" type="submit"><span id="submitText">Sign in</span><span class="arrow">↗</span></button>
+          <div class="message" id="message" role="status" aria-live="polite"></div>
+        </form>
+        <div class="bottom-note">By continuing, you agree to our <a href="#" onclick="return false">Terms</a> &amp; <a href="#" onclick="return false">Privacy Policy</a>.</div>
+      </div>
+      <div class="copyright">© 2026 LUMA STUDIO <span>MADE WITH CARE ✦</span></div>
+    </section>
+  </main>
+  <script src="/static/app.js"></script>
+</body>
+</html>
