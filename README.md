@@ -1,5 +1,7 @@
 # Luma Login — FastAPI + PostgreSQL (Debugged)
 
+Runing Command: uvicorn app.main:app --reload
+
 A responsive glossy login/signup page backed by FastAPI and PostgreSQL.
 
 ## Features
